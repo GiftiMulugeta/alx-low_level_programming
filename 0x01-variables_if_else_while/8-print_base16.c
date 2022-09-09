@@ -5,22 +5,20 @@
  * Return: Always 0(Success)
  */
 int main(void)
-
+{
 	char c;
-       	e='e';
-	q='q';
+	char C;
 
-	for (c = 'a'; c <= 'z'; c++)
-	{    
-		if (c!=e && c!=q)
-		{
-			putchar(c);
-		}
-
-	} 
+	for (c = '0'; c <= '9'; c++)
+	{
+		putchar(c);
+	}
+	for (C = 'a'; C <= 'f'; C++)
+	{
+		putchar(C);
+	}
 	putchar('\n');
 	return (0);
-
 }
 
 
