@@ -6,7 +6,7 @@
   * main- Entry point
   *
   * Return: return type
- */
+  */
 int main(void)
 {
 	int n;
