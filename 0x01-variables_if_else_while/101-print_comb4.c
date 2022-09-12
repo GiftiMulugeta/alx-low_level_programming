@@ -25,9 +25,8 @@ int main(void)
 						continue;
 					if (c != '7')
 					{
-
 						putchar(',');
-				          	putchar(' ');
+						putchar(' ');
 					}
 				}
 			}
