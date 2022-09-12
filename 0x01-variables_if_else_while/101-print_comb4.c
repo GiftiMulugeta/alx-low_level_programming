@@ -24,8 +24,11 @@ int main(void)
 					if (c == '8')
 						continue;
 					if (c != '7')
+					{
+
 						putchar(',');
-					putchar(' ');
+				          	putchar(' ');
+					}
 				}
 			}
 		}
