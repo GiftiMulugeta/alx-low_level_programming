@@ -16,8 +16,11 @@ int main(void)
 	{
 		num = n1 + n2;
 		printf("%ld", num);
-		printf("%c", c);
-		printf(" ");
+		if (n != 50)
+		{
+			printf("%c", c);
+			printf(" ");
+		}
 		n1 = n2;
 		n2 = num;
 	}
