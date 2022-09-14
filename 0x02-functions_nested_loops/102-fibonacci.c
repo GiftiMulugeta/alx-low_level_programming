@@ -13,12 +13,16 @@ int main(void)
 	for (n=2; n<50; n++)
 	{
 		num= n1+ n2;
-		printf("%d",num); 
-		printf("%c",c); 
-		printf(" ");
+	        printf("%d",num); 
+		if (num != -811192543)
+		{
+			printf("%c",c); 
+			printf(" ");
+		}
 		n1= n2;
 		n2=num;
 	}
+	printf("\n");
 
 	return (0);
 }
