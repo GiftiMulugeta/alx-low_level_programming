@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int n1=0, n2=1, n, num;
+	int n1=1, n2=2, n, num;
 	char c=',';
 	printf("%d%c%c%d%c%c",n1,c,' ',n2,c,' ');
-	for (n=2; n<50; n++)
+	for (n=3; n<50; n++)
 	{
 		num= n1+ n2;
 	        printf("%d",num); 
