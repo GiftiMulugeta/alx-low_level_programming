@@ -3,8 +3,6 @@
 
 /**
  * print_most_numbers- Entry point
- *@a: The character to print
- *@b: The character to print
  *
  * Return: Always 0
  */
