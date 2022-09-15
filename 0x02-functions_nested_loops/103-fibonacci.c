@@ -13,16 +13,14 @@ int main(void)
 	for (n = 0; n <= 34; n++)
 	{
 		num = n1 + n2;
-		if ((num<=4000000)&&(num%2==0))
+		if ((num <= 4000000) && (num % 2 == 0))
 		{
-			sum=sum+num;
-	
+			sum = sum + num;
 		}
 		n1 = n2;
 		n2 = num;
-
 	}
-	printf("%d",sum);
+	printf("%d", sum);
 	printf("\n");
 
 	return (0);
