@@ -7,30 +7,19 @@
  */
 int main(void)
 {
-	int n1 = 1, n2 = 2, n, num, sum = 0;
+	int n1 = 0, n2 = 1, n, num, sum = 0;
 
-	char c = ',';
-
-	printf("%d%c%c%d%c%c", n1, c, ' ', n2, c, ' ');
-	for (n = 3; n <= 50; n++)
+	/*printf("%d%c%c%d%c%c", n1, c, ' ', n2, c, ' ');*/
+	for (n = 0; n <= 34; n++)
 	{
 		num = n1 + n2;
-		/*printf("%ld", num);
-		if (n != 50)
+		if ((num<=4000000)&&(num%2==0))
 		{
-			printf("%c", c);
-			printf(" ");
-		}*/
+			sum=sum+num;
+	
+		}
 		n1 = n2;
 		n2 = num;
-		if (num< 4000000)
-		{
-		
-			if (n%2==0)
-			{
-				sum=sum+n;
-			}
-		}
 
 	}
 	printf("%d",sum);
