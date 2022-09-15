@@ -2,17 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * _isupper - Entry point
+ *@c: The character to print
  *
  * Return: Always 0
  */
 int _isupper(int c)
 {
-
 	char u;
+
 	int ret = 0;
-	 
-	for (u='A'; u<= 'Z'; u++)
+
+	for (u = 'A'; u <= 'Z'; u++)
 	{
 		if (c == u)
 		{
