@@ -3,25 +3,25 @@
 
 /**
  * print_square- Entry point
- * @n: The character to be print
+ * @size: The character to be print
  *
  * Return: Always 0
  */
-void print_square(int n)
+void print_square(int size)
 {
 	int c, i;
 
-	if (n > 0)
+	if (size > 0)
 	{
 
-		for (i = 0; i < n; i++)
+		for (i = 0; i < size; i++)
+		{
+			for (c = 0; c < size; c++)
 			{
-				for (c = 0; c < n; c++)
-				{
-					_putchar('#');
-				}
-				_putchar('\n');
+				_putchar('#');
 			}
+			_putchar('\n');
+		}
 	}
 	else
 		_putchar('\n');
