@@ -31,7 +31,7 @@ void puts_half(char *str)
 	else if (len % 2 != 0)
 	{
 		c = (len - 1) / 2;
-		++c;
+		c=c+1;
 		for (; c < d; c++)
 		{
 			_putchar(str[c]);
