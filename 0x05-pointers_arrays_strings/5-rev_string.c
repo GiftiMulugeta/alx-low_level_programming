@@ -2,23 +2,25 @@
 #include "stdio.h"
 
 /**
- *print_rev - Entry point
+ *rev_string - Entry point
  *@s: the character to be print
  *
  * Return: Always 0.
  */
 void rev_string(char *s)
 {
-	int c;
+	int c, a;
+	char swap;
 
+	a = 0;
 	c = 0;
 	while (s[c] != '\0')
 		c++;
-	while (c >= 0)
-	{	
-		putchar(s[c]);
-		c--;
+	while (a < c--)
+	{
+		swap = s[a];
+		s[a++] = s[c];
+		s[c] = swap;
 	}
-	putchar('\n');
 
 }
