@@ -16,7 +16,6 @@ void rev_string(char *s)
 		c++;
 	while (c >= 0)
 	{	
-
 		putchar(s[c]);
 		c--;
 	}
