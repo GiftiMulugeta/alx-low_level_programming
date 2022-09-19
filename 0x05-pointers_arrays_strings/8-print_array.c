@@ -22,6 +22,7 @@ void print_array(int *a, int n)
 		if (c < n - 1)
 		{
 			printf("%c", b);
+			putchar(' ');
 		}
 	}
 	putchar('\n');
