@@ -28,7 +28,7 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 	con[j] = '\0';
-	printf("%s",con);
-	printf("%s",src);
+	printf("%s", con);
+	printf("%s", src);
 	return (0);
 }
