@@ -35,20 +35,6 @@ char *_strncpy(char *dest, char *src, int n)
 	*}
 	*con[j] = '\0';
 	*/
-	for (s = 0; s < n; s++)
-	{
-		if(n>5)
-		{
-			dest[i]=src[s];
-			i++;
-		}
-		else
-		{
-			dest[i] = src[s];
-			i++;
-		}
-		dest[i]='\0';
-	}
 	if(n>5)
 	{
 		for(s=0;s<n;s++)
