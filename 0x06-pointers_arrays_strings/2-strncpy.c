@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * *_strncat- check the code
+ * *_strncpy- check the code
  * @dest: the character to print
  * @src: the character to print
  *@n: the character to print
@@ -11,9 +11,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	/*char *con = dest;*/
 	int i = 0;
-	
 	int srclength;
 	int s;
 
@@ -23,25 +21,24 @@ char *_strncpy(char *dest, char *src, int n)
 	else
 		n = n;
 	/*
-	while (dest[i] != '\0')
-	{
-		con[j] = dest[i];
-		i++;
-		j++;
-	}
-	i = 0;
+	*while (dest[i] != '\0')
+	*{
+	*	con[j] = dest[i];
+	*	i++;
+	*	j++;
+	*}
+	*i = 0;
+	*for (s = 0; s < n; s++)
+	*{
+	*	con[j] = src[s];
+	*	j++;
+	*}
+	*con[j] = '\0';
+	*/
 	for (s = 0; s < n; s++)
 	{
-		con[j] = src[s];
-		j++;
-	}
-	con[j] = '\0';*/
-
-	for(s=0; s<n; s++)
-	{
-		dest[i]=src[s];
+		dest[i] = src[s];
 		i++;
 	}
-	
 	return (dest);
 }
