@@ -10,7 +10,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char con[500];
+	char *con = dest;
 	int i = 0;
 	int j = 0;
 
@@ -28,6 +28,5 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 	con[j] = '\0';
-	printf("%s", con);
-	return (0);
+	return (con);
 }
