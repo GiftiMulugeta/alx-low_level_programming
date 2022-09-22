@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * *_strcat- check the code
+ * *_strncat- check the code
  * @dest: the character to print
  * @src: the character to print
+ *@n: the character to print
  *
  * Return: Always 0
  */
@@ -17,10 +18,10 @@ char *_strncat(char *dest, char *src, int n)
 	int s;
 
 	srclength = strlen(src);
-	if (n>srclength)
-		n=srclength;
+	if (n > srclength)
+		n = srclength;
 	else
-		n=n;
+		n = n;
 	while (dest[i] != '\0')
 	{
 		con[j] = dest[i];
@@ -28,7 +29,7 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 	i = 0;
-	for (s=0; s<n; s++)
+	for (s = 0; s < n; s++)
 	{
 		con[j] = src[s];
 		j++;
