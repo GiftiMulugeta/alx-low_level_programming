@@ -41,14 +41,30 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[i]=src[s];
 			i++;
-			dest[i]='\0';
-			
 		}
 		else
 		{
 			dest[i] = src[s];
 			i++;
 		}
+		dest[i]='\0';
 	}
+	if(n>5)
+	{
+		for(s=0;s<n;s++)
+		{
+			dest[i]=src[s];
+			i++;
+		}
+		dest[i]='\0';
+	}
+	else if (n<=5)
+	{
+		for(s=0;s<n;s++)
+		{
+			dest[i]=src[s];
+			i++;
+		}
+	}	
 	return (dest);
 }
