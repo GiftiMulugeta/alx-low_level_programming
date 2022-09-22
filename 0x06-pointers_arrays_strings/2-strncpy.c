@@ -14,7 +14,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int i = 0;
 	int srclength;
 	int s;
-
+	
 	srclength = strlen(src);
 	if (n > srclength)
 		n = srclength;
@@ -37,8 +37,18 @@ char *_strncpy(char *dest, char *src, int n)
 	*/
 	for (s = 0; s < n; s++)
 	{
-		dest[i] = src[s];
-		i++;
+		if(n>5)
+		{
+			dest[i]=src[s];
+			i++;
+			dest[i]='\0';
+			
+		}
+		else
+		{
+			dest[i] = src[s];
+			i++;
+		}
 	}
 	return (dest);
 }
