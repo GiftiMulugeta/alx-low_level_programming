@@ -2,21 +2,22 @@
 #include <stdio.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * _memcpy - check the code
+ * @dest : prints buffer in hexa
+ * @src: the address of memory to print
+ * @n: the size of the memory to print
  *
  * Return: Nothng
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *a =dest;
+	char *a = dest;
 
-	while(n--)
+	while (n--)
 	{
-		*dest=*src;
+		*dest = *src;
 		src++;
 		dest++;
 	}
-	return(a);
+	return (a);
 }
