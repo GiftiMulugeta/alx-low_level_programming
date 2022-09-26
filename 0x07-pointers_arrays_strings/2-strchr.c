@@ -2,23 +2,19 @@
 #include <stdio.h>
 
 /**
- * _memcpy - check the code
- * @dest : prints buffer in hexa
- * @src: the address of memory to print
- * @n: the size of the memory to print
+ * *_strchr - check the code
+ * @s : prints buffer in hexa
+ * @c: the address of memory to print
  *
  * Return: Nothng
  */
 char *_strchr(char *s, char c)
 {
-	
-	while(*s)
+	while (*s)
 	{
-		if (c==*s)
-			return(s);
+		if (c == *s)
+			return (s);
 		s++;
 	}
-
-
 	return (NULL);
 }
