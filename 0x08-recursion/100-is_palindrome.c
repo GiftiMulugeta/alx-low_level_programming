@@ -1,28 +1,37 @@
 #include "main.h"
 #include <stdio.h>
-int prime_num(int num, int prime);
+#include <string.h>
+int palidrome(char *str, int i, int j);
 /**
- * is_prime_number - return factorial of a number
- * @n: the character to print
+ * is_palindrome - return factorial of a number
+ * @s: the character to print
  *
  * Return: Always 0
  */
 int is_palindrome(char *s)
 {
-	if (n <= 1)
-		return (0);
-	return (prime_num(n, 2));
+	if (strlen(s) <= 1)
+		return (1);
+	return (palidrome(s, 0, strlen(s) - 1));
 
 }
 
 /**
- * prime_num  - return square root
- * @num: the character to print
- * @prime: the character to print
+ * palidrome  - return square root
+ * @str: the character to print
+ * @i: the character to print
+ * @j: the character to print
  *
  * Return: Always 0.
  */
-int prime_num(char *str, int i, int j)
+int palidrome(char *str, int i, int j)
 {
-	i =  0; j=
+	i =  0;
+	j = strlen(str) - 1;
+	if (str[i] != str[j])
+		return (0);
+	else if (i >= j)
+		return (1);
+	return (palidrome(str, i + 1, j - 1));
+
 }
