@@ -33,5 +33,5 @@ int main(int argc, char *argv[])
 		printf("%d", c);
 	}
 	putchar('\n');
-	return (c);
+	return (0);
 }
