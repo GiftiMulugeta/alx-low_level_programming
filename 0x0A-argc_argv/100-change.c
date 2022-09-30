@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	a = atoi(argv[1]);
-	if (a <= 0)
+	if (a < 0)
 	{
 		putchar('0');
 		putchar('\n');
