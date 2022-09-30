@@ -21,7 +21,6 @@ int main(int argc, char *argv[])
 	if (a < 0)
 	{
 		putchar('0');
-		putchar('\n');
 	}
 	else
 	{
@@ -31,8 +30,8 @@ int main(int argc, char *argv[])
 			a -= j * cent[i];
 			c = c + j;
 		}
+		printf("%d", c);
 	}
-	printf("%d", c);
 	putchar('\n');
-	return (0);
+	return (c);
 }
