@@ -21,7 +21,7 @@ void print_name_uppercase(char *name)
 		{
 			putchar(name[i]);
 		}
-		i++:
+		i++;
 	}
 }
 int main(void)
