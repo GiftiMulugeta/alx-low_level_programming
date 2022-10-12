@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include "3-calc.h"
-
-
-
-
-
-
+/**
+ * get_op_func - function pointer
+ * @s : operand
+ * Return: return value of operation made on the operands
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
