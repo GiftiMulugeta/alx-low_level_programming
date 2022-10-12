@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+
 /**
  * op_add - add 2 number
  * @a: character
@@ -57,7 +58,7 @@ int op_div(int a, int b)
 	return (a / b);
 }
 /**
- * op_mod modulo of 2 number
+ * op_mod - modulo of 2 number
  * @a: the character
  * @b: character
  * Return: return value
