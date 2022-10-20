@@ -1,17 +1,18 @@
 extern printf
+
+section .data
+msg db "Hello, Holberton",0
+format db "%s", 10, 0 
+
 section .text
 global main
 
 main:
-mov edx, len
-mov ecx, msg
-mov ebx, 1
-mov eax, 4
-int 0x80
-
-mov eax, 1
-int 0x080
-
-section .data
-msg db "Hello, Holberton",0xa
-len equ $ -msg
+push	rbp
+mov	rdi,format
+mov	rsi,msg
+mov	rax,0
+call	printf
+pop	rbp
+mov	rax,0
+ret
