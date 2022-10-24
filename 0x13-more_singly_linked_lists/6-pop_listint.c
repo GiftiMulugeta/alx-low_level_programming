@@ -1,13 +1,20 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 #include "lists.h"
-
 /**
- * free_listint2 - free listiny linked list
+ * pop_listint - pop head
  * @head: argument
+ * Return: number popped argument
  */
-void free_listint2(listint_t **head)
+int pop_listint(listint_t **head)
 {
+	listint_t *tmp;
+	int i;
 
-
+	tmp = *head;
+	i = tmp->n;
+	*head = tmp->next;
+	tmp = NULL;
+	return (i);
 }
